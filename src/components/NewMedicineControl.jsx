@@ -1,4 +1,5 @@
 import React from "react";
+import NewMedicineForm from "./NewMedicineForm";
 
 class NewMedicineControl extends React.Component {
 
@@ -14,7 +15,7 @@ class NewMedicineControl extends React.Component {
   render(){
     let formAreaContent = null;
       if (this.state.formVisibleOnPage){
-        formAreaContent = <h1>Form will eventually go here!</h1>
+        formAreaContent = <NewMedicineForm/>
       } else {
         formAreaContent = <button onClick={this.handleDisplayingNewMedicineForm.bind(this)}>Enter New Medication </button>;
       }
