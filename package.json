@@ -1,5 +1,5 @@
 {
-  "name": "medicine-tracker",
+  "name": "MediTrack",
   "version": "1.0.0",
   "description": "A simple app to keep track of recommended medicine frequency and when pills were last taken",
   "main": "index.jsx",
@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Larry Taylor",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
 }
