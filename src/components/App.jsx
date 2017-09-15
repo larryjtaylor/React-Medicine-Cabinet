@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
 function App(props){
   return (
     <div>
-      <h1>MediTrack</h1>
+      <Header/>
       <h3>Vitamin C</h3>
       <h3>1 daily</h3>
       <hr/>
