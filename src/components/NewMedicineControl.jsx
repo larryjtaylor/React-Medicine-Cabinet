@@ -28,7 +28,8 @@ class NewMedicineControl extends React.Component {
         margin: "auto"
       }
       var imageStyle = {
-        marginTop: "5%"
+        marginTop: "5%",
+        width: "100%"
       }
 
       return (
@@ -43,7 +44,7 @@ class NewMedicineControl extends React.Component {
           onHide={this.hideFormModal}
           bsSize="large">
           <Modal.Header>
-            <Modal.Title>Enter Medication</Modal.Title>
+            <Modal.Title><h1>Enter Medication</h1></Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <NewMedicineForm

@@ -24,7 +24,6 @@ class MedicineCabinet extends React.Component {
   }
 
   updateMedicineTimeSinceCreated() {
-    console.log("check");
     let newMasterPillsList = this.state.masterPillsList.slice();
     newMasterPillsList.forEach((medicine) =>
     medicine.setTimeSinceCreated()
