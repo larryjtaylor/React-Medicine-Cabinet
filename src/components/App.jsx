@@ -1,15 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import PillsList from "./PillsList";
-import NewMedicineControl from "./NewMedicineControl";
+import MedicineCabinet from "./MedicineCabinet";
 
 function App(props){
   return (
     <div>
       <Header/>
-      <PillsList/>
-      <hr/>
-      <NewMedicineControl/>
+      <MedicineCabinet/>
     </div>
   );
 }
