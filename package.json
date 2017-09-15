@@ -1,0 +1,11 @@
+{
+  "name": "medicine-tracker",
+  "version": "1.0.0",
+  "description": "A simple app to keep track of recommended medicine frequency and when pills were last taken",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Larry Taylor",
+  "license": "ISC"
+}
