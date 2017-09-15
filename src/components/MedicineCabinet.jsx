@@ -12,6 +12,26 @@ class MedicineCabinet extends React.Component {
     this.addNewMedicineToList = this.addNewMedicineToList.bind(this);
   }
 
+  componentDidMount() {
+    this.timeSinceCreatedChecker = setInterval(() =>
+    this.updateMedicineTimeSinceCreated(),
+    5000
+    );
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.timeSinceCreatedChecker);
+  }
+
+  updateMedicineTimeSinceCreated() {
+    console.log("check");
+    let newMasterPillsList = this.state.masterPillsList.slice();
+    newMasterPillsList.forEach((medicine) =>
+    medicine.setTimeSinceCreated()
+  );
+  this.setState({masterPillsList:newMasterPillsList})
+  }
+
   addNewMedicineToList(newMedicine){
     var newMasterPillsList = this.state.masterPillsList.slice();
         newMasterPillsList.push(newMedicine);
