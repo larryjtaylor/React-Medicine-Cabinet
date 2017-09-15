@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import PillsList from "./PillsList";
 
 function App(props){
   return (
