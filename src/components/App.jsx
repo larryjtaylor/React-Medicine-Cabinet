@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import PillsList from "./PillsList";
+import NewMedicineControl from "./NewMedicineControl";
 
 function App(props){
   return (
@@ -8,6 +9,7 @@ function App(props){
       <Header/>
       <PillsList/>
       <hr/>
+      <NewMedicineControl/>
     </div>
   );
 }
