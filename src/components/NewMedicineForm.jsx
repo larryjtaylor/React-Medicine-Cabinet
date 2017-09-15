@@ -19,25 +19,32 @@ class NewMedicineForm extends React.Component {
   }
 
   render() {
+    var formStyle= {
+      marginLeft: "2%",
+      width: "150px"
+    }
+    var buttonStyle= {
+      marginLeft: "2%"
+    }
     return (
       <div>
         <form onSubmit={this.handleNewMedicineFormSubmission}>
-          <input
+          <input style={formStyle}
             ref="_name"
             type="text"
             id="name"
             placeholder="Enter Medication"/>
-          <input
+          <input style={formStyle}
             ref="_dosage"
             type="text"
             id="dosage"
             placeholder="Enter Dosage"/>
-          <input
+          <input style={formStyle}
             ref="_frequency"
             type="text"
             id="frequency"
-            placeholder="Enter How often you should take it"/>
-          <Button type="submit" bsStyle="primary">Add</Button>
+            placeholder="Enter Frequency"/>
+          <Button style={buttonStyle} type="submit" bsStyle="primary">Add</Button>
         </form>
       </div>
     );

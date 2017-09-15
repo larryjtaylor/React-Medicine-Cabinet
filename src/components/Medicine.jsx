@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Moment from "moment";
 
 function Medicine(props) {
+
   return (
     <div>
       <h2>Name: {props.name}</h2>

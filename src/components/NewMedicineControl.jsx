@@ -20,11 +20,21 @@ class NewMedicineControl extends React.Component {
     this.setState({formModalIsShowing: false});
   }
 
+
   render(){
-    return (
+
+      var buttonStyle = {
+        display: "block",
+        margin: "auto"
+      }
+      var imageStyle = {
+        marginTop: "5%"
+      }
+
+      return (
       <div>
         <Button
-          bsStyle="success"
+          bsStyle="success" style={buttonStyle}
           onClick={this.showFormModal}>
           Add New Medication
         </Button>
@@ -38,7 +48,7 @@ class NewMedicineControl extends React.Component {
           <Modal.Body>
             <NewMedicineForm
               onNewMedicineCreation={this.props.onNewMedicineCreation}                           hideFormAfterSubmission = {this.hideFormModal}/>
-            <img src="http://www.3babak.com/images/category/medicine1-1.jpg"></img>
+            <img style={imageStyle} src="http://www.3babak.com/images/category/medicine1-1.jpg"></img>
           </Modal.Body>
         </Modal>
       </div>

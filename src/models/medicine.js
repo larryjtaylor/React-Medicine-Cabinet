@@ -6,7 +6,7 @@ class Medicine {
     this.dosage = dosage;
     this.frequency = frequency;
     this.timeCreated = new Moment();
-    this.timeSinceCreated = this.setTimeSinceCreated();
+    this.timeSinceCreated = "a few seconds";
   }
   setTimeSinceCreated() {
     this.timeSinceCreated = this.timeCreated.fromNow(true);
