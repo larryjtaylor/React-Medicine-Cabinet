@@ -1,5 +1,6 @@
 import React from "react";
 import NewMedicineForm from "./NewMedicineForm";
+import PropTypes from "prop-types";
 
 class NewMedicineControl extends React.Component {
 
@@ -15,7 +16,8 @@ class NewMedicineControl extends React.Component {
   render(){
     let formAreaContent = null;
       if (this.state.formVisibleOnPage){
-        formAreaContent = <NewMedicineForm/>
+        formAreaContent = <NewMedicineForm
+          onNewMedicineCreation={this.props.onNewMedicineCreation}/>
       } else {
         formAreaContent = <button onClick={this.handleDisplayingNewMedicineForm.bind(this)}>Enter New Medication </button>;
       }
@@ -25,6 +27,10 @@ class NewMedicineControl extends React.Component {
       </div>
     );
   }
+}
+
+NewMedicineControl.propTypes = {
+  onNewMedicineCreation: PropTypes.func
 }
 
 export default NewMedicineControl;
