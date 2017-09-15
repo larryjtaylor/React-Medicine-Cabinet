@@ -4,7 +4,8 @@
   "description": "A simple app to keep track of recommended medicine frequency and when pills were last taken",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":  "webpack-dev-server"
   },
   "author": "Larry Taylor",
   "license": "ISC",
