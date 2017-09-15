@@ -1,7 +1,7 @@
 import React from "react";
 
-function PillssList(props){
+function PillsList(props){
   return ();
 }
 
-export default PillssList; 
+export default PillsList; 

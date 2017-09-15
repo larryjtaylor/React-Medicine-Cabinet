@@ -5,8 +5,7 @@ function App(props){
   return (
     <div>
       <Header/>
-      <h3>Vitamin C</h3>
-      <h3>1 daily</h3>
+      <PillsList/>
       <hr/>
     </div>
   );
