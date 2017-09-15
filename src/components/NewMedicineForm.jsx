@@ -1,6 +1,7 @@
 import React from "react";
 import Medicine from "../models/Medicine.js";
 import PropTypes from "prop-types";
+import { Button }  from "react-bootstrap";
 
 class NewMedicineForm extends React.Component {
 
@@ -14,6 +15,7 @@ class NewMedicineForm extends React.Component {
   const { _name, _dosage, _frequency } = this.refs;
   var newMedicine = new Medicine(_name.value, _dosage.value, _frequency.value);
   this.props.onNewMedicineCreation(newMedicine);
+  this.props.hideFormAfterSubmission();
   }
 
   render() {
@@ -35,7 +37,7 @@ class NewMedicineForm extends React.Component {
             type="text"
             id="frequency"
             placeholder="Enter How often you should take it"/>
-          <button type="submit">Add</button>
+          <Button type="submit" bsStyle="primary">Add</Button>
         </form>
       </div>
     );
@@ -43,7 +45,8 @@ class NewMedicineForm extends React.Component {
 }
 
 NewMedicineForm.propTypes = {
-  onNewMedicineCreation: PropTypes.func
+  onNewMedicineCreation: PropTypes.func,
+  hideFormAfterSubmission: PropTypes.func
 }
 
 export default NewMedicineForm;
