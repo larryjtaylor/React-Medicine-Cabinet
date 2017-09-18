@@ -5,7 +5,7 @@ _React.js project for Epicodus, 09/15/2017_
 By _Larry Taylor_
 
 ## Description
-This web application was created to allow a user to keep track of their medications. They will be able to add new medicines and be told when to take those medicines.
+This web application was created to allow a user to keep track of their medications. They will be able to add new medicines and be told when they last took those medications.
 
 ## Installation
 
