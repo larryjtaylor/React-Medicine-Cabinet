@@ -44,7 +44,9 @@ class NewMedicineControl extends React.Component {
           onHide={this.hideFormModal}
           bsSize="large">
           <Modal.Header>
-            <Modal.Title><h1>Enter Medication</h1></Modal.Title>
+            <Modal.Title>
+              <h1>Enter Medication</h1>
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <NewMedicineForm

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Moment from "moment";
+import PillsTaken from "./PillsTaken";
 
 function Medicine(props) {
 
@@ -10,6 +11,7 @@ function Medicine(props) {
       <h3>First added: {props.timeSinceCreated} ago</h3>
       <h4>Dosage: {props.dosage}</h4>
       <h4>Frequency: {props.frequency}</h4>
+      <PillsTaken/>
       <hr/>
     </div>
   );
