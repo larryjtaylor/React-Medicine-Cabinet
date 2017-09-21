@@ -7,7 +7,7 @@ function Header(props){
       backgroundImage: "url('https://www.etmc.org/wp-content/uploads/2015/09/banner-clinic-family-medicine-generic.jpg')",
       height: "200px",
       fontSize: "700%",
-      paddingTop: "50px", 
+      paddingTop: "50px",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat"
     }

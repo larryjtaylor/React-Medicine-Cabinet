@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Moment from "moment";
+import { Button } from "react-bootstrap";
 
 class PillsTaken extends React.Component{
 
@@ -20,8 +21,8 @@ class PillsTaken extends React.Component{
   render() {
     return (
       <div>
-        <button onClick={this.takePill}>Take Medication</button>
-        <h4>PIll taken last: {this.state.timeTaken}</h4>
+        <Button bsStyle="primary" onClick={this.takePill}>Take Medication</Button>
+        <h4>Pill last taken: {this.state.timeTaken}</h4>
       </div>
     )
   }

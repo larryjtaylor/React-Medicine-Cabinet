@@ -32,6 +32,10 @@ class NewMedicineControl extends React.Component {
         width: "100%"
       }
 
+      var modalSize = {
+        fontSize: "32px"
+      }
+
       return (
       <div>
         <Button
@@ -45,7 +49,7 @@ class NewMedicineControl extends React.Component {
           bsSize="large">
           <Modal.Header>
             <Modal.Title>
-              <h1>Enter Medication</h1>
+              <p style={modalSize}>Enter Medication</p>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

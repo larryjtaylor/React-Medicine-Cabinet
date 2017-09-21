@@ -5,10 +5,11 @@ import PillsTaken from "./PillsTaken";
 
 function Medicine(props) {
 
+
   return (
     <div>
-      <h2>Name: {props.name}</h2>
-      <h3>First added: {props.timeSinceCreated} ago</h3>
+      <h1>Name: {props.name}</h1>
+      <h4>First added: {props.timeSinceCreated} ago</h4>
       <h4>Dosage: {props.dosage}</h4>
       <h4>Frequency: {props.frequency}</h4>
       <PillsTaken/>

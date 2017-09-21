@@ -4,16 +4,23 @@ import  PropTypes from "prop-types";
 
 function PillsList(props){
 
+  var listStyle = {
+    marginLeft: "2%",
+    display: "grid",
+    gridTemplateColumns: "26% 26% 26%",
+    gridTemplateRows: "10%",
+    gridGap: "5px 8%"
+  }
+
   return (
-    <div>
-      <hr/>
-        {props.pillsList.map((medicine, index) =>
-          <Medicine name={medicine.name}
-                  dosage={medicine.dosage}
-                  frequency={medicine.frequency}
-                  timeSinceCreated={medicine.timeSinceCreated}
-                  key={index}/>
-        )}
+    <div style={listStyle}>
+      {props.pillsList.map((medicine, index) =>
+        <Medicine name={medicine.name}
+                dosage={medicine.dosage}
+                frequency={medicine.frequency}
+                timeSinceCreated={medicine.timeSinceCreated}
+                key={index}/>
+      )}
     </div>
   );
 }
