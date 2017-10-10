@@ -16,6 +16,19 @@ This web application was created to allow a user to keep track of their medicati
   * `npm start`
 * In your browser, navigate to `localhost:8080` to see the project displayed.
 
+##  Program Preview
+![Home Page Preview](home.png)
+_Home Page_
+
+![Input Form](form_modal.png)
+_Users enter required medications and instructions for use via a form modal._
+
+![Meds Listed](med_list.png)
+_Users can see a list of their inputted medications displayed._
+
+![Meds taken](med_taken.png)
+_Users can mark a medication as taken using the 'take medication' button._
+
 ## Technologies Used
 
 React.js, JSX, Babel, Bootstrap, Node.js, Webpack, Moment.js, CSS, HTML
